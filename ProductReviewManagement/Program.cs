@@ -9,7 +9,7 @@ namespace ProductReviewManagement
         {
             Console.WriteLine("*****Product Review Management Program*****");
 
-            List<ProductReview> productReviewlist = new List<ProductReview>()
+            List<ProductReview> productlist = new List<ProductReview>()
             {
                 new ProductReview() { ProductId = 1, UserId = 1, Rating = 4.9, Review = "Excelent", isLike = true },
                 new ProductReview() { ProductId = 1, UserId = 1, Rating = 4.9, Review = "Excelent", isLike = true },
@@ -38,10 +38,18 @@ namespace ProductReviewManagement
                 new ProductReview() { ProductId = 4, UserId = 5, Rating = 4.1, Review = "Good    ", isLike = true }
             };
 
-            foreach (var list in productReviewlist)
+            foreach (var list in productlist)
             {
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Top 3 Records from list \n");
+
+            Management management = new Management();
+
+            management.RetrieveTop3Records(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------");
+
         }
     }
 }
