@@ -38,30 +38,34 @@ namespace ProductReviewManagement
                 new ProductReview() { ProductId = 4, UserId = 5, Rating = 4.1, Review = "Good    ", isLike = true }
             };
 
-            foreach (var list in productlist)
-            {
-                Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
-            }
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Top 3 Records from list \n");
+            //foreach (var list in productlist)
+            //{
+            //    Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
+            //}
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Top 3 Records from list \n");
 
-            Management management = new Management();
+            //Management management = new Management();
 
-             management.RetrieveTop3Records(productlist);
+            // management.RetrieveTop3Records(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Data Rating are Greater then 3 and ProductId is 1, 4, 9 \n");
-            management.RetrieveRecordsWithGreaterThanThreeRating(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Data Rating are Greater then 3 and ProductId is 1, 4, 9 \n");
+            //management.RetrieveRecordsWithGreaterThanThreeRating(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Count Of Review For Each ProductId \n");
-            management.RetrieveCountOfReviewForEachProductId(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Count Of Review For Each ProductId \n");
+            //management.RetrieveCountOfReviewForEachProductId(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Of All Records \n");
-            management.RetrieveProductIdAndReviewOfAllRecords(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Of All Records \n");
+            //management.RetrieveProductIdAndReviewOfAllRecords(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Skip Top 5 Records and Retrieve other All Records \n");
-            management.SkipTopFiveRecords(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Skip Top 5 Records and Retrieve other All Records \n");
+            //management.SkipTopFiveRecords(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Using Select \n");
-            management.RetrieveProductIdAndReviewUsingSelect(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Using Select \n");
+            //management.RetrieveProductIdAndReviewUsingSelect(productlist);
+
+            DataTable records = new DataTable();
+
+            records.AddDataIntoDataTable();
 
         }
 
