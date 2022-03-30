@@ -56,6 +56,9 @@ namespace ProductReviewManagement
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Of All Records \n");
             management.RetrieveProductIdAndReviewOfAllRecords(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Skip Top 5 Records and Retrieve other All Records \n");
+            management.SkipTopFiveRecords(productlist);
         }
       
     }
