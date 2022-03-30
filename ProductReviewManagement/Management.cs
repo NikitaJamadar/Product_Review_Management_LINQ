@@ -101,5 +101,17 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id : " + list.ProductId + " || Review : " + list.Review);
             }
         }
+        public void RetrieveProductId9WithRating(List<ProductReview> review)
+        {
+            var recordData = (from products in review
+                              where (products.ProductId == 9)
+                              orderby products.Rating descending
+                              select products);
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductId + " || Rating : " + list.Rating);
+            }
+        }
     }
 }
