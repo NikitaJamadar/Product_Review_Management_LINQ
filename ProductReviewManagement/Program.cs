@@ -54,6 +54,11 @@ namespace ProductReviewManagement
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------");
 
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Count Of Review For Each ProductId \n");
+
+
+            management.RetrieveCountOfReviewForEachProductId(productlist);
         }
+      
     }
 }
