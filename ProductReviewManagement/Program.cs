@@ -63,9 +63,13 @@ namespace ProductReviewManagement
             //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Using Select \n");
             //management.RetrieveProductIdAndReviewUsingSelect(productlist);
 
-            DataTable records = new DataTable();
+            //DataTable records = new DataTable();
 
-            records.AddDataIntoDataTable();
+            //records.AddDataIntoDataTable();
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId Where values isLike is True \n");
+           Management management = new Management();
+            management.RetrieveProductIdLike(productlist);
 
         }
 
