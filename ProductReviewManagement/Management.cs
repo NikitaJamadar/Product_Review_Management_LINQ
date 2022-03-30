@@ -70,5 +70,25 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id : " + list.ProductId + " || Review : " + list.Review);
             }
         }
+        public void RetrieveProductIdLike(List<ProductReview> review)
+        {
+            var recordData = (from products in review
+                              where (products.isLike == true)
+                              select products);
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductId + " || Is Like : " + list.isLike);
+            }
+        }
+        public void RetrieveAverage(List<ProductReview> review)
+        {
+            var recordData = (review.GroupBy(p => p.ProductId).Select(x => new { ProductId = x.Key, Avg = x.Average(p => p.Rating) }));
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductId + " || Average : " + list.Avg);
+            }
+        }
     }
 }
