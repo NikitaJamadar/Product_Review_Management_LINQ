@@ -77,6 +77,10 @@ namespace ProductReviewManagement
             Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId and whose Review is Good \n");
             management.RetrieveReviewIsGood(productlist);
 
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n  Retrieve ProductId = 9 With Rating Desending order \n");
+            management.RetrieveProductId9WithRating(productlist);
+
+
 
         }
 
