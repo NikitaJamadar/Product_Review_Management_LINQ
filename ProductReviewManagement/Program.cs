@@ -67,9 +67,12 @@ namespace ProductReviewManagement
 
             //records.AddDataIntoDataTable();
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId Where values isLike is True \n");
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId Where values isLike is True \n");
            Management management = new Management();
-            management.RetrieveProductIdLike(productlist);
+            //management.RetrieveProductIdLike(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Average of Rating \n");
+            management.RetrieveAverage(productlist);
 
         }
 
