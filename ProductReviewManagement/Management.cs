@@ -61,5 +61,14 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id : " + list.ProductId + " || User Id : " + list.UserId + " || Rating : " + list.Rating + " || Review : " + list.Review + " || Is Like : " + list.isLike);
             }
         }
+        public void RetrieveProductIdAndReviewUsingSelect(List<ProductReview> review)
+        {
+            var recordData = review.Select(products => new { ProductId = products.ProductId, Review = products.Review });
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductId + " || Review : " + list.Review);
+            }
+        }
     }
 }
