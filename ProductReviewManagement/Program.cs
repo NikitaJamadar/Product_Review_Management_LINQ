@@ -49,15 +49,13 @@ namespace ProductReviewManagement
              management.RetrieveTop3Records(productlist);
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Data Rating are Greater then 3 and ProductId is 1, 4, 9 \n");
-
             management.RetrieveRecordsWithGreaterThanThreeRating(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------");
-
             Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Count Of Review For Each ProductId \n");
-
-
             management.RetrieveCountOfReviewForEachProductId(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Review Of All Records \n");
+            management.RetrieveProductIdAndReviewOfAllRecords(productlist);
         }
       
     }
