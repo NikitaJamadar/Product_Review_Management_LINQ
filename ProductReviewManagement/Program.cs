@@ -46,7 +46,11 @@ namespace ProductReviewManagement
 
             Management management = new Management();
 
-            management.RetrieveTop3Records(productlist);
+             management.RetrieveTop3Records(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve Data Rating are Greater then 3 and ProductId is 1, 4, 9 \n");
+
+            management.RetrieveRecordsWithGreaterThanThreeRating(productlist);
 
             Console.WriteLine("\n------------------------------------------------------------------------------------------------");
 
