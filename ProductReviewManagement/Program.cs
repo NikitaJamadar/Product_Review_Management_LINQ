@@ -71,8 +71,12 @@ namespace ProductReviewManagement
            Management management = new Management();
             //management.RetrieveProductIdLike(productlist);
 
-            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Average of Rating \n");
-            management.RetrieveAverage(productlist);
+            //Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId And Average of Rating \n");
+            //management.RetrieveAverage(productlist);
+
+            Console.WriteLine("\n------------------------------------------------------------------------------------------------ \n Retrieve ProductId and whose Review is Good \n");
+            management.RetrieveReviewIsGood(productlist);
+
 
         }
 

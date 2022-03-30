@@ -90,5 +90,16 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id : " + list.ProductId + " || Average : " + list.Avg);
             }
         }
+        public void RetrieveReviewIsGood(List<ProductReview> review)
+        {
+            var recordData = (from products in review
+                              where (products.Review == "Good    ")
+                              select products);
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductId + " || Review : " + list.Review);
+            }
+        }
     }
 }
