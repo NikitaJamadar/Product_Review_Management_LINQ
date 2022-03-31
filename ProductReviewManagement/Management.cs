@@ -101,10 +101,10 @@ namespace ProductReviewManagement
                 Console.WriteLine("Product Id : " + list.ProductId + " || Review : " + list.Review);
             }
         }
-        public void RetrieveProductId9WithRating(List<ProductReview> review)
+        public void RetrieveProductId10WithRating(List<ProductReview> review)
         {
             var recordData = (from products in review
-                              where (products.ProductId == 9)
+                              where (products.ProductId == 10)
                               orderby products.Rating descending
                               select products);
 
